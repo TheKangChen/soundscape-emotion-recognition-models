@@ -4,6 +4,13 @@ Neural Networks for predicting Russell's valence and arousal circumplex model of
 ---
 <br>
 
+### Feature Set Dimensions
+- Database feature set dimension: 1213 x 122
+- Reduced feature set dimension: 1213 x 74
+
+---
+<br>
+
 ### Trained Neural Network
 |                    | Arousal | Valence |
 | :----------------: | :-----: | :-----: |
@@ -12,7 +19,7 @@ Neural Networks for predicting Russell's valence and arousal circumplex model of
 ---
 <br>
 
-### SVR baseline model
+### SVR baseline model (122 x 1)
 |       Arousal      |    Mean   |    Std    |
 | :----------------: | :-------: | :-------: |
 |      R Squared     | 0.793712  | 0.031416  |
@@ -25,7 +32,20 @@ Neural Networks for predicting Russell's valence and arousal circumplex model of
 
 <br>
 
-### Neural Network
+### SVR reduced feature model (74 x 1)
+|       Arousal      |    Mean   |    Std    |
+| :----------------: | :-------: | :-------: |
+|      R Squared     | 0.785556  | 0.026073  |
+| Mean Squared Error | 0.071068  | 0.009651  |
+
+|       Valence      |    Mean   |    Std    |
+| :----------------: | :-------: | :-------: |
+|      R Squared     | 0.547271	 | 0.051466  |
+| Mean Squared Error | 0.148914  | 0.011666  |
+---
+<br>
+
+### Neural Network (122 x 1)
 |       Arousal      |    Mean   |    Std    |
 | :----------------: | :-------: | :-------: |
 |      R Squared     | 0.722813  | 0.235087  |
@@ -35,6 +55,19 @@ Neural Networks for predicting Russell's valence and arousal circumplex model of
 | :----------------: | :-------: | :-------: |
 |      R Squared     | 0.494576	 | 0.173223  |
 | Mean Squared Error | 0.137190	 | 0.030402  |
+
+<br>
+
+### Neural Network reduced feature (74 x 1)
+|       Arousal      |    Mean   |    Std    |
+| :----------------: | :-------: | :-------: |
+|      R Squared     | 0.730940  | 0.161783  |
+| Mean Squared Error | 0.070679	 | 0.028536  |
+
+|       Valence      |    Mean   |    Std    |
+| :----------------: | :-------: | :-------: |
+|      R Squared     | 0.504163	 | 0.121443  |
+| Mean Squared Error | 0.138414	 | 0.038270  |
 
 <br>
 
