@@ -1,5 +1,5 @@
 # Soundscape Emotion Recognition Models
-Neural Networks for predicting Russell's valence and arousal circumplex model of affect.
+Neural Networks for predicting Russell's valence and arousal circumplex model of affect for soundscapes.
 
 ---
 <br>
